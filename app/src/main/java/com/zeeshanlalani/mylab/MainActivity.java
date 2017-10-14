@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView newTextView;
     Button btnAlertBox;
     int increment;
+    EditText txtName;
 
     Button btnActivity, btnActivity2;
     @Override
@@ -29,6 +31,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnAlertBox = (Button) findViewById(R.id.btnAlertBox);
         btnActivity = (Button) findViewById(R.id.btnActivity);
         btnActivity2 = (Button) findViewById(R.id.btnActivity2);
+
+        txtName = (EditText) findViewById(R.id.txtName);
 
         btnActivity.setOnClickListener(this);
         btnActivity2.setOnClickListener(this);
@@ -63,10 +67,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         if ( view == btnActivity ) {
             Intent i = new Intent(MainActivity.this, RegisterActivity.class);
-            i.putExtra("name", "Zeeshan");
+            String name = txtName.getText().toString();
+            i.putExtra("name", name);
             startActivity(i);
         } else if ( view == btnActivity2 ) {
-            Intent i = new Intent(MainActivity.this, RegisterActivity.class);
+            Intent i = new Intent(MainActivity.this, Students.class);
             i.putExtra("name", "Lalani");
             startActivity(i);
         }

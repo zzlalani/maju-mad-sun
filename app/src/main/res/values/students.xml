@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="student_names">
+        <item>Mohammad Ahmed</item>
+        <item>Reyan Baig</item>
+        <item>Burhan Ali</item>
+        <item>Ali Khan</item>
+        <item>Mohammad Ahmed</item>
+        <item>Reyan Baig</item>
+        <item>Burhan Ali</item>
+        <item>Ali Khan</item>
+        <item>Mohammad Ahmed</item>
+        <item>Reyan Baig</item>
+        <item>Burhan Ali</item>
+        <item>Ali Khan</item>
+        <item>Mohammad Ahmed</item>
+        <item>Reyan Baig</item>
+        <item>Burhan Ali</item>
+        <item>Ali Khan</item>
+        <item>Mohammad Ahmed</item>
+        <item>Reyan Baig</item>
+        <item>Burhan Ali</item>
+        <item>Ali Khan</item>
+        <item>Mohammad Ahmed</item>
+        <item>Reyan Baig</item>
+        <item>Burhan Ali</item>
+        <item>Ali Khan</item>
+    </string-array>
+</resources>
